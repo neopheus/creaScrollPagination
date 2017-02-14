@@ -1,0 +1,22 @@
+{
+  "name": "creaScrollPagination",
+  "version": "0.1.0",
+  "homepage": "https://github.com/neopheus/creaScrollPagination",
+  "description": "Infinite scroll pagination is inspired from Facebook and Twitter. This is just pagination where the user will need to scroll to bottom of the page to read more articles. ",
+  "author": {
+    "name": "Neopheus",
+    "email": "neo.pheus@gmail.com",
+    "url": "https://github.com/neopheus"
+  },
+  "main": "src/creaScrollPagination.js",
+  "keywords": [
+    "infinite",
+    "scroll",
+    "infinity",
+    "scroller"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1"
+  }
+}
