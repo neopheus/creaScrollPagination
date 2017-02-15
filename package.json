@@ -4,11 +4,12 @@
   "description": "scroll pagination",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --config .eslintrc.json src",
+    "grunt": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neopheus/creaScrollPagination.git"
+    "url": "git://github.com/neopheus/creaScrollPagination.git"
   },
   "keywords": [
     "scroll"

@@ -21,10 +21,10 @@
   };
   $.fn.creaScrollPagination.init = function($e, options){
     var _options = $.extend({}, $.fn.creaScrollPagination.defaults, options ),
-      _$window = $(window),
-      _lastUrl = null,
-      _newUrl = null,
-      _loading = false;
+        _$window = $(window),
+        _lastUrl = null,
+        _newUrl = null,
+        _loading = false;
 
     $(_options.pagerSelector).hide();
 
