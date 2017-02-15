@@ -17,5 +17,5 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   //register default task
-  grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', 'uglify');
 };
