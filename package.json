@@ -20,11 +20,13 @@
     "url": "https://github.com/neopheus/creaScrollPagination/issues"
   },
   "homepage": "https://github.com/neopheus/creaScrollPagination#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^2.1.0",
-    "eslint-grunt": "^1.0.0"
+    "grunt-eslint": "^19.0.0"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
   }
 }

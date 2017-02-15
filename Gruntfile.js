@@ -5,9 +5,9 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     eslint: {
       options: {
-        configFile: 'eslintrc.json'
+        config: '.eslintrc.json'
       },
-      target: ['src/jquery.creascrollpagination.js']
+      all: ['src/*.js']
     },
     uglify: {
       options: {
@@ -21,6 +21,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-eslint');
   //register default task
   grunt.registerTask('default', ['eslint', 'uglify']);
 };

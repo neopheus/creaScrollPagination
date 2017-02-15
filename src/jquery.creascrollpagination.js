@@ -2,12 +2,10 @@
  * Created by Neo on 25/01/2017.
  */
 (function( $ ) {
-  "use strict";
+  'use strict';
 
-  $.fn.creaScrollPagination = function(options)
-  {
-    return this.each(function()
-    {
+  $.fn.creaScrollPagination = function(options) {
+    return this.each(function() {
       $.fn.creaScrollPagination.init($(this), options);
     });
   };
@@ -33,7 +31,7 @@
         if (!_loading){
           _loading = true;
           _newUrl = $(_options.nextSelector).attr('href');
-          if (_newUrl != _lastUrl){
+          if (_newUrl !== _lastUrl){
             _lastUrl = _newUrl;
             $.ajax({
               url: _newUrl,
