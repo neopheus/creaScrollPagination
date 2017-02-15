@@ -5,8 +5,7 @@
     "qunit": true
   },
   "globals": {
-    "fabric": true,
-    "G_vmlCanvasManager": true
+    "jQuery": true
   },
   "rules": {
     "eqeqeq": 0,

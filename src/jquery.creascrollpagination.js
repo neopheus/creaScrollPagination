@@ -13,8 +13,11 @@
   };
   $.fn.creaScrollPagination.defaults =
   {
-    'offsetBottom': 0,
-    'nextSelector': 'a.next:last'
+    offsetBottom: 0,
+    nextSelector: 'a.next:last',
+    pagerSelector: '.pagination',
+    contentSelector: '#products-content',
+    callback: function() { return true; }
   };
   $.fn.creaScrollPagination.init = function($e, options){
     var _options = $.extend({}, $.fn.creaScrollPagination.defaults, options ),
@@ -22,6 +25,8 @@
       _lastUrl = null,
       _newUrl = null,
       _loading = false;
+
+    $(_options.pagerSelector).hide();
 
     _$window.scroll(function(){
       if ($(document).height() - _$window.height() - _options.offsetBottom <= _$window.scrollTop()) {
@@ -34,10 +39,11 @@
               url: _newUrl,
               dataType: 'html',
               success: function(html) {
-                var mydata = $(html).find('#properties');
+                var mydata = $(html).find(_options.contentSelector);
                 $e.append(mydata);
                 _loading = false;
-                $('.pagination').hide();
+                $(_options.pagerSelector).hide();
+                _options.callback();
               }
             });
           }
