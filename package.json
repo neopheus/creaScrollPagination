@@ -1,0 +1,25 @@
+{
+  "name": "creascrollpagination",
+  "version": "1.0.0",
+  "description": "scroll pagination",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neopheus/creaScrollPagination.git"
+  },
+  "keywords": [
+    "scroll"
+  ],
+  "author": "neopheus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neopheus/creaScrollPagination/issues"
+  },
+  "homepage": "https://github.com/neopheus/creaScrollPagination#readme",
+  "dependencies": {
+    "grunt-contrib-uglify": "^2.1.0"
+  }
+}

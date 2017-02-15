@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -7,25 +9,13 @@ module.exports = function (grunt) {
         banner: '/*! <%= pkg.name %> <%= pkg.version %> <%=grunt.template.today("yyyy-mm-dd")%>*/'
       },
       dist: {
-        src: ['dist/timer.jquery.js'],
-        dest: 'dist/timer.jquery.min.js'
-      }
-    },
-
-    watch: {
-      scripts: {
-        files: ['dist/timer.jquery.js'],
-        tasks: ['uglify'],
-        options: {
-          nospawn: true
-        }
+        src: ['src/jquery.creascrollpagination.js'],
+        dest: 'dist/jquery.creascrollpagination.min.js'
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
   //register default task
   grunt.registerTask('default', 'watch');
 };
