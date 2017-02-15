@@ -18,7 +18,7 @@
     callback: function() { return true; }
   };
   $.fn.creaScrollPagination.init = function($e, options){
-    var _options = $.extend({}, $.fn.creaScrollPagination.defaults, options ),
+    var _options = $.extend({}, $.fn.creaScrollPagination.defaults, options),
         _$window = $(window),
         _lastUrl = null,
         _newUrl = null,
