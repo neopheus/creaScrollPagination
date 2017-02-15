@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/neopheus/creaScrollPagination#readme",
   "dependencies": {
+    "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint-grunt": "^1.0.0"
   }
 }
