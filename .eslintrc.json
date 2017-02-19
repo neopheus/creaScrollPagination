@@ -28,12 +28,7 @@
     "no-loop-func": 2,
     "no-multi-str": 2,
     "no-caller": 2,
-    "no-empty": [
-      2,
-      {
-        "allowEmptyCatch": true
-      }
-    ],
+    "no-empty": 0,
     "no-new": 0,
     "no-plusplus": 0,
     "strict": 0,
