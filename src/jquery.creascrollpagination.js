@@ -31,7 +31,7 @@
         if (!_loading){
           _loading = true;
           _newUrl = $(_options.nextSelector).attr('href');
-          if (_newUrl !== _lastUrl){
+          if (_newUrl !== _lastUrl && _newUrl !== undefined){
             _lastUrl = _newUrl;
             $.ajax({
               url: _newUrl,
